@@ -18,4 +18,11 @@ class product(models.Model):
     
     def __str__(self):
         return self.name
+class siginup(models.Model):
+    username=models.CharField(max_length=100,null=True)
+    name=models.CharField(max_length=100,null=True)
+    email=models.EmailField(null=True)
+    password=models.CharField(max_length=30,null=True)
+    contact=models.CharField(max_length=15,null=True)
+
     

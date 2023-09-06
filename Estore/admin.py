@@ -11,3 +11,9 @@ class info2(admin.ModelAdmin):
     list_display=('name','price','stock','image',)
 
 admin.site.register(product,info2)
+
+
+class info3(admin.ModelAdmin):
+    list_display=('username','password',)
+
+admin.site.register(siginup,info3)
